@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/scss.css">
+</head>
+<body>
+<header class="header">
+    <div class="inner header__inner d-flex align-items-center justify-content-between">
+        <a class="header__logo" href="#"><img src="images/logo.png" alt="logo"></a>
+        <div class="search-block header__search-block search-block_short d-flex align-items-center">
+            <button class="header-search__button d-flex align-items-center justify-content-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                          stroke="#FDD446" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 15L12 12" stroke="#FDD446" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <input class="header-search__input " type="text" placeholder="Поиск...">
+            <div class="search-block-results">
+                <div class="result">
+                    <div class="result__img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M10 19C14.4183 19 18 15.4183 18 11C18 6.58172 14.4183 3 10 3C5.58172 3 2 6.58172 2 11C2 15.4183 5.58172 19 10 19Z"
+                                  stroke="#FDD446" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 21L16 17" stroke="#FDD446" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="result__title">
+                        Анастасия
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result__img" style="background-image: url('../images/foto-small1.png')">
+                    </div>
+                    <div class="result__title">
+                        Анастасия Ивлеева
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result__img" style="background-image: url('../images/foto-small2.png')">
+                    </div>
+                    <div class="result__title">
+                        Анастасия Ивлеева
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result__img" style="background-image: url('../images/foto-small3.png')">
+                    </div>
+                    <div class="result__title">
+                        Анастасия Ивлеева
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="header-button header-button_transparent">Вход</button>
+        <button class="header-button header-button_orange">Регистрация</button>
+    </div>
+</header>
+<section class="search-panel ">
+    <div class="inner search-panel__inner d-flex align-items-center">
+        <div class="filter-block filter-block_short ">
+            <a class="filter-block__link d-flex align-items-center justify-content-between" href="">
+                <span class="filter-block__text">Фильтры</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                    <path d="M6.5 10L12.1292 0.25H0.870835L6.5 10Z" fill="#FDD446"/>
+                </svg>
+            </a>
+        </div>
+        <div class="search-block  search-panel__search-block search-block_long">
+            <button class="header-search__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                          stroke="#FDD446" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 15L12 12" stroke="#FDD446" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <input class="header-search__input" type="text" placeholder="Поиск...">
+        </div>
+        <div class="filter-block filter-block_long ">
+            <a class="filter-block__link d-flex align-items-center justify-content-between" href="">
+                <span class="filter-block__text">По умолчанию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                    <path d="M6.5 10L12.1292 0.25H0.870835L6.5 10Z" fill="#FDD446"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="stars">
+
+    <div class="inner stars__inner">
+        <div class="blur-small-1">
+            <img class="blur-small-1" src="images/blur-small1.png" alt="">
+        </div>
+        <div class="blur-small-2">
+            <img class="blur-small-2" src="images/blur-small2.png" alt="">
+        </div>
+        <div class="stars__items d-flex">
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+            <div class="star">
+                <div class="star__img d-flex align-items-center justify-content-center">
+                    <img src="images/foto.png" alt="foto">
+                </div>
+                <div class="empty">
+                    Без слов
+                </div>
+                <div class="star__data d-flex  justify-content-center">
+                    <div class="star__data-img">
+                        <img src="images/small-foto.png" alt="">
+                    </div>
+                    <div class="star__data-text  ">
+                        <div class="star__data-name">
+                            Настя Ивлеева Вячеславовна
+                        </div>
+                        <div class="star__data-verify">
+                            <span>проверено</span>
+                            <img src="images/verify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="star__value d-flex justify-content-between">
+                    <div class="star__rarity">
+                        Редкость:
+                    </div>
+                    <div class="star__unique d-flex align-items-center justify-content-center">
+                        уникальная
+                    </div>
+                </div>
+                <div class="star__price d-flex justify-content-between align-items-center">
+                    <div class="star__price-text">
+                        Цена:
+                    </div>
+                    <div class="star__price-num d-flex align-items-center">
+                        от 500 ₽
+                    </div>
+                </div>
+
+                <div class="star__action d-flex align-items-center justify-content-center">
+                    <button class="star__button">Купить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<nav class="nav">
+    <div class="inner nav__inner">
+        <ul class="pagination-block d-flex justify-content-center align-items-center">
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    <span>«</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">
+                <span>1</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="20" fill="#FDD446"/>
+                </svg>
+            </a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    <span>»</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<footer class="footer">
+    <div class="inner footer__inner">
+        <div class="footer__info d-flex align-items-center justify-content-between">
+            <div class="footer__nft">
+                <h2>NFT </h2>
+                <div>Что такое NFT</div>
+                <div>Создайте NFT
+                    с нами
+                </div>
+            </div>
+            <div class="footer__company">
+                <h2>Компания</h2>
+                <div>О нас</div>
+                <div>Отправить запрос</div>
+            </div>
+            <div class="footer__other">
+                <h2>Другое</h2>
+                <div>Условия использования</div>
+                <div>Политика
+                    конфиденциальности
+                </div>
+            </div>
+        </div>
+        <div class="footer__nav">
+            <ul class="d-flex align-items-center ">
+                <li><a href=""><img src="images/twitter.png" alt="twitter"></a></li>
+                <li><a href=""> <img src="images/vk.png" alt="vk"></a></li>
+            </ul>
+        </div>
+        <div class="footer__logo">
+            <div class="footer__logo-img">
+                <img src="images/logo-footer.png" alt="logo footer">
+            </div>
+        </div>
+        <div class="footer__right">
+            @ tnft.ru Company, Inc
+        </div>
+        <div class="blur-big">
+            <img src="images/blur-big.png" alt="">
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
